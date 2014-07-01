@@ -16,6 +16,9 @@
 		BF406273196306CE00D11580 /* libVCTabBarController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF40625B196306CE00D11580 /* libVCTabBarController.a */; };
 		BF406279196306CE00D11580 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF406277196306CE00D11580 /* InfoPlist.strings */; };
 		BF40627B196306CE00D11580 /* VCTabBarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40627A196306CE00D11580 /* VCTabBarControllerTests.m */; };
+		BF40628619630CFA00D11580 /* VCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40628519630CFA00D11580 /* VCTabBar.m */; };
+		BF40628A19630D3300D11580 /* VCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40628919630D3300D11580 /* VCTabBarView.m */; };
+		BF40628D19630D6800D11580 /* VCTab.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40628C19630D6800D11580 /* VCTab.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		BF406276196306CE00D11580 /* VCTabBarControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VCTabBarControllerTests-Info.plist"; sourceTree = "<group>"; };
 		BF406278196306CE00D11580 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF40627A196306CE00D11580 /* VCTabBarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCTabBarControllerTests.m; sourceTree = "<group>"; };
+		BF40628419630CFA00D11580 /* VCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTabBar.h; sourceTree = "<group>"; };
+		BF40628519630CFA00D11580 /* VCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTabBar.m; sourceTree = "<group>"; };
+		BF40628819630D3300D11580 /* VCTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTabBarView.h; sourceTree = "<group>"; };
+		BF40628919630D3300D11580 /* VCTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTabBarView.m; sourceTree = "<group>"; };
+		BF40628B19630D6800D11580 /* VCTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTab.h; sourceTree = "<group>"; };
+		BF40628C19630D6800D11580 /* VCTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTab.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +119,7 @@
 		BF406260196306CE00D11580 /* VCTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				BF406263196306CE00D11580 /* VCTabBarController.h */,
-				BF406265196306CE00D11580 /* VCTabBarController.m */,
+				BF40628719630D1000D11580 /* Classes */,
 				BF406261196306CE00D11580 /* Supporting Files */,
 			);
 			path = VCTabBarController;
@@ -141,6 +149,21 @@
 				BF406277196306CE00D11580 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF40628719630D1000D11580 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF406263196306CE00D11580 /* VCTabBarController.h */,
+				BF406265196306CE00D11580 /* VCTabBarController.m */,
+				BF40628819630D3300D11580 /* VCTabBarView.h */,
+				BF40628919630D3300D11580 /* VCTabBarView.m */,
+				BF40628419630CFA00D11580 /* VCTabBar.h */,
+				BF40628519630CFA00D11580 /* VCTabBar.m */,
+				BF40628B19630D6800D11580 /* VCTab.h */,
+				BF40628C19630D6800D11580 /* VCTab.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +210,7 @@
 		BF406253196306CE00D11580 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = VC;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = vc7;
 			};
@@ -224,6 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF40628619630CFA00D11580 /* VCTabBar.m in Sources */,
+				BF40628A19630D3300D11580 /* VCTabBarView.m in Sources */,
+				BF40628D19630D6800D11580 /* VCTab.m in Sources */,
 				BF406266196306CE00D11580 /* VCTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  VCTabBarController.h
+//  VCTabBar.h
 //  VCTabBarController
 //
 //  Created by vincent on 2014/07/01.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VCTabBarController : UIViewController
+@interface VCTabBar : UIView
 
 @end
