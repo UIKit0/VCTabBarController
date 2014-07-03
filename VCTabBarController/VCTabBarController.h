@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class VCTabBarView;
+@class VCTabBar;
+
 @interface VCTabBarController : UIViewController
+
+@property (nonatomic, strong) NSArray *viewControllers;
+@property (nonatomic, strong) UIViewController *selectedViewController;
+@property (nonatomic) NSUInteger selectedIndex;
+
+@property (nonatomic, strong) VCTabBarView *tabBarView;
+@property (nonatomic, strong) VCTabBar *tabBar;
+
+@property (nonatomic, readonly) BOOL visible;
 
 @end

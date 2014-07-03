@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VCTab : UIView
+@interface VCTab : UIButton
+
+- (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage;
 
 @end
