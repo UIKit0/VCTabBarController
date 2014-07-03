@@ -19,6 +19,11 @@
 		BF40628619630CFA00D11580 /* VCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40628519630CFA00D11580 /* VCTabBar.m */; };
 		BF40628A19630D3300D11580 /* VCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40628919630D3300D11580 /* VCTabBarView.m */; };
 		BF40628D19630D6800D11580 /* VCTab.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40628C19630D6800D11580 /* VCTab.m */; };
+		BF7E861E196565F3001FD6A6 /* VCTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = BF406263196306CE00D11580 /* VCTabBarController.h */; };
+		BF7E861F196565F3001FD6A6 /* VCTabBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40628819630D3300D11580 /* VCTabBarView.h */; };
+		BF7E8620196565F3001FD6A6 /* VCTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40628419630CFA00D11580 /* VCTabBar.h */; };
+		BF7E8621196565F3001FD6A6 /* VCTab.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40628B19630D6800D11580 /* VCTab.h */; };
+		BF7E8622196565F3001FD6A6 /* VCTabBarController-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BF406262196306CE00D11580 /* VCTabBarController-Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +173,21 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BF7E861D196565DD001FD6A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7E861E196565F3001FD6A6 /* VCTabBarController.h in Headers */,
+				BF7E861F196565F3001FD6A6 /* VCTabBarView.h in Headers */,
+				BF7E8620196565F3001FD6A6 /* VCTabBar.h in Headers */,
+				BF7E8621196565F3001FD6A6 /* VCTab.h in Headers */,
+				BF7E8622196565F3001FD6A6 /* VCTabBarController-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		BF40625A196306CE00D11580 /* VCTabBarController */ = {
 			isa = PBXNativeTarget;
@@ -176,6 +196,7 @@
 				BF406257196306CE00D11580 /* Sources */,
 				BF406258196306CE00D11580 /* Frameworks */,
 				BF406259196306CE00D11580 /* CopyFiles */,
+				BF7E861D196565DD001FD6A6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -319,6 +340,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SYMROOT = "$(PROJECT_DIR)/../build";
 			};
 			name = Debug;
 		};
@@ -349,6 +371,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
+				SYMROOT = "$(PROJECT_DIR)/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -432,6 +455,7 @@
 				BF406280196306CE00D11580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF406281196306CE00D11580 /* Build configuration list for PBXNativeTarget "VCTabBarControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +464,7 @@
 				BF406283196306CE00D11580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
