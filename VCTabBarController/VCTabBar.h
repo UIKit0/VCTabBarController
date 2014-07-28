@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+@class VCTab;
+
+@protocol VCTabBarDelegate;
+
 @interface VCTabBar : UIView
+
+@property (nonatomic, weak) id <VCTabBarDelegate> delegate;
+
+@property (nonatomic, strong) NSArray *tabs;
+@property (nonatomic, strong) VCTab *selectedTab;
+
+@end
+
+@protocol VCTabBarDelegate <NSObject>
+
+- (void)tabBar:(VCTabBar *)aTabBar didSelectTabAtIndex:(NSInteger)index;
 
 @end

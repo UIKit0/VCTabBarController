@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class VCTabBar;
+
 @interface VCTabBarView : UIView
+
+@property (nonatomic, assign) UIView *contentView;
+@property (nonatomic, assign) VCTabBar *tabBar;
 
 @end
